@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=x\ y\ picture
+comment0.target=Turtle(int,\ int,\ Picture)
+comment0.text=\ Constructor\ that\ takes\ the\ x\ and\ y\ and\ a\ picture\ to\r\n\ draw\ on\r\n\ @param\ x\ the\ starting\ x\ position\r\n\ @param\ y\ the\ starting\ y\ position\r\n\ @param\ picture\ the\ picture\ to\ draw\ on\r\n
+comment1.params=x\ y\ modelDisplayer
+comment1.target=Turtle(int,\ int,\ ModelDisplay)
+comment1.text=\ Constructor\ that\ takes\ the\ x\ and\ y\ and\ a\ model\r\n\ display\ to\ draw\ it\ on\r\n\ @param\ x\ the\ starting\ x\ position\r\n\ @param\ y\ the\ starting\ y\ position\r\n\ @param\ modelDisplayer\ the\ thing\ that\ displays\ the\ model\r\n
+comment2.params=modelDisplay
+comment2.target=Turtle(ModelDisplay)
+comment2.text=\ Constructor\ that\ takes\ the\ model\ display\r\n\ @param\ modelDisplay\ the\ thing\ that\ displays\ the\ model\r\n
+comment3.params=p
+comment3.target=Turtle(Picture)
+comment3.text=\r\n\ Constructor\ that\ takes\ a\ picture\ to\ draw\ on\r\n\ @param\ p\ the\ picture\ to\ draw\ on\r\n
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
