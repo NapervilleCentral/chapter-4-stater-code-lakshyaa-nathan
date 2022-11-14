@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=mathy
+comment1.params=
+comment1.target=mathy()
+comment1.text=\r\n\ \ \ \ \ \ \ \ default\ constructor\ -\ stubed\ in\r\n
+comment2.params=x
+comment2.target=int\ abs(int)
+comment2.text=\r\n\ \ \ \ \ \ \ \ take\ the\ absoulute\ value\ of\ the\ number\r\n\ \ \ \ \ \ \ \ @param\ int\ value\r\n\ \ \ \ \ \ \ \ @return\ absoulute\ value\ of\ number\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ toString\r\n\ \ \ \ \ \ \ \ \ \ \ \ message\ from\ Mathy\ class\r\n\ \ \ \ \ \ \ \ \ \ \ \ @param\ none\r\n\ \ \ \ \ \ \ \ \ \ \ \ @return\ String\ message\r\n
+numComments=4
