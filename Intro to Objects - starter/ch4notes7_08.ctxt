@@ -2,10 +2,4 @@
 comment0.target=ch4notes7_08
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment2.params=x
-comment2.target=int\ abs(int)
-comment2.text=\r\n\ \ \ \ \ \ \ \ take\ the\ absoulute\ value\ of\ the\ number\r\n\ \ \ \ \ \ \ \ @param\ int\ value\r\n\ \ \ \ \ \ \ \ @return\ absoulute\ value\ of\ number\r\n
-comment3.params=x
-comment3.target=double\ abs(double)
-comment3.text=\r\n\ \ \ \ \ \ \ \ take\ the\ absoulute\ value\ of\ the\ number\r\n\ \ \ \ \ \ \ \ @param\ double\ value\r\n\ \ \ \ \ \ \ \ @return\ absoulute\ value\ of\ number\r\n
-numComments=4
+numComments=2

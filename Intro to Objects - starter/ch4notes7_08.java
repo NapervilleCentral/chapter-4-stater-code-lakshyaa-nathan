@@ -16,22 +16,28 @@ public class ch4notes7_08
     public static void main (String[] args)
     {
     
-        mathy solver = new mathy();
+        mathy solver = new mathy(7);
         int x = -5;
+        
+        double y = 5.5;
         System.out.println(solver.abs(-5)); //obj.method
-        System.out.println(abs(-8)*abs(9));
-        System.out.println(abs(5.2)+1);
-        System.out.println(abs(x));
-        System.out.println(x+"main");
+        System.out.println(solver.abs(y)*10);
+        System.out.println(solver.circleArea(10));
+        System.out.println(solver.getArea());
+        //System.out.println(abs(-8)*abs(9));
+        //System.out.println(abs(5.2)+1);
+        //System.out.println(abs(x));
+        //System.out.println(x+"main");
         
     /**/
     }// end of main
     
+    /*
     /**
         take the absoulute value of the number
         @param int value
         @return absoulute value of number
-    */
+    
    
     // public vs. private - public methods everyone can view/use
     //static = abstract!
@@ -51,10 +57,11 @@ public class ch4notes7_08
         take the absoulute value of the number
         @param double value
         @return absoulute value of number
-    */
     
+    
+   
     // overloading method - different type or different amount
-    public static double abs(double x)
+    public static double abs(double x) 
                        //method signature
     {
         x = -5;
@@ -65,13 +72,23 @@ public class ch4notes7_08
         return x;
     }
     
+    /**
+     * add will sum the two ints and return the result 
+     * @param int x int y
+     * @return int sum 
+     **/
     
-    
-    
-    //public static int add (int x, int y)
+    /*                        //method signature
+    public static int add (int x, int y){
+        int sum=x+y;
+        return sum;
+    }
 
+    public static int add(int x, int y, int z){
+        return x+y+z;
+    }
 
-
+    */
 }// end of class
 
 

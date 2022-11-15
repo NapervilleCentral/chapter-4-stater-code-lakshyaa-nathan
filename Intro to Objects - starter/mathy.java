@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-
+import java.util.*;
 //import javax.swing.*;
 
 public class mathy
@@ -13,11 +13,21 @@ public class mathy
     public mathy( )
     {
 
+        area =0;
         System.out.println ("hi from default constructor" );
 
     }//end of default const
 
 
+    /**
+     * constructor
+     * @param int sets area
+     */
+    
+    public mathy(int a){
+        area = a;
+        System.out.println("hi from constructor");
+    }
 
     /**
         take the absoulute value of the number
@@ -34,13 +44,43 @@ public class mathy
 
     }//end of abs
 
+    /**
+        take the absoulute value of the number
+        @param double value
+        @return absoulute value of number
+    */
+    
+    // overloading method - different type or different amount
+    public static double abs(double x) 
+                       //method signature
+    {
+        x = -5;
+        if(x<0)
+            x=-x;
+        
+        System.out.println(x+"double");
+        return x;
+    }
+    
+    /**
+     * 
+     */
+    
+    public double circleArea(int r){
+        double area = Math.PI * Math.pow(r,2);
+        return area;
+    }
 
+    /**
+     * getArea
+     * @return the area that has been calculated
+     */
 
-
-
-
-
-
+    public double getArea(){
+        return area;
+    }
+    
+    
     /**
         two int parameters and adds them
         @param 2 int values
