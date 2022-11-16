@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=circle
+comment1.params=
+comment1.target=circle()
+comment1.text=\r\n\ Default\ Constructor\:\r\n\ \r\n
+comment2.params=radius
+comment2.target=circle(double)
+comment2.text=\r\n\ \ \ \ //Constructor\r\n
+comment3.params=
+comment3.target=double\ calcCircumference()
+comment4.params=
+comment4.target=void\ calcRadius()
+comment4.text=\r\n\ calcRadius\ sets\ the\ radius\ to\ the\ proper\ number\r\n\ \r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ toString\r\n\ @return\ String\ of\ the\ private\ data\r\n
+comment6.params=
+comment6.target=void\ calcArea()
+comment6.text=\r\n\ calcArea\ \=\ private,\ finds\ the\ area\ of\ the\ circle\r\n
+numComments=7

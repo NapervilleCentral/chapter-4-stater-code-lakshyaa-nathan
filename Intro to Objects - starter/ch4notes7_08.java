@@ -24,6 +24,10 @@ public class ch4notes7_08
         System.out.println(solver.abs(y)*10);
         System.out.println(solver.circleArea(10));
         System.out.println(solver.getArea());
+        System.out.println(solver);
+        circle round = new circle(5);
+        System.out.println(round);
+    
         //System.out.println(abs(-8)*abs(9));
         //System.out.println(abs(5.2)+1);
         //System.out.println(abs(x));

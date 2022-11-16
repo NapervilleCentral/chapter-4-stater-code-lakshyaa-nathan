@@ -19,6 +19,6 @@ comment6.params=
 comment6.target=double\ getArea()
 comment6.text=\r\n\ getArea\r\n\ @return\ the\ area\ that\ has\ been\ calculated\r\n
 comment7.params=
-comment7.target=java.lang.String\ toString()
+comment7.target=java.lang.String\ toSing()
 comment7.text=\r\n\ \ \ \ \ \ \ \ \ \ \ \ toString\r\n\ \ \ \ \ \ \ \ \ \ \ \ message\ from\ Mathy\ class\r\n\ \ \ \ \ \ \ \ \ \ \ \ @param\ none\r\n\ \ \ \ \ \ \ \ \ \ \ \ @return\ String\ message\r\n
 numComments=8

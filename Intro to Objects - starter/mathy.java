@@ -25,7 +25,7 @@ public class mathy
      */
     
     public mathy(int a){
-        area = a;
+        area = a; //local variables take precedence over class variables 
         System.out.println("hi from constructor");
     }
 
@@ -102,7 +102,7 @@ public class mathy
     */
 
 
-    public String toString()
+    public String toSing() //if this is not a toString, it will print the address number
     {
         return ("Hi what do you want?, I'm just Mathy");
 
