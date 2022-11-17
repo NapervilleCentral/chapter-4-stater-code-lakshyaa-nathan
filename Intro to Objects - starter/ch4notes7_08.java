@@ -27,6 +27,7 @@ public class ch4notes7_08
         System.out.println(solver);
         circle round = new circle(5);
         System.out.println(round);
+        round.calcDiameter();
     
         //System.out.println(abs(-8)*abs(9));
         //System.out.println(abs(5.2)+1);

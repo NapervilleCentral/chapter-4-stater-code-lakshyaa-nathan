@@ -35,7 +35,7 @@ public class circle
         radius = radius; //local variable, so holds precedence
         this.radius = radius; //this. is the attribute vs. the local variable (radius is 5 with this)
         circumference = calcCircumference();
-        calcRadius();
+        calcDiameter();
         calcArea();
     }
 
@@ -44,18 +44,21 @@ public class circle
     }
     
     /**
-     * calcRadius sets the radius to the proper number
+     * calcDiameter sets the diameter to the proper number
      * 
      */
     
     
-    private void calcRadius(){ 
+    private void calcDiameter(){ 
         //no local variable in this class 
-        radius = diameter/2;
+        diameter = radius * 2;
     }
     
     
-    
+    public double getDiameter(){
+        
+        return diameter;
+    }
     
     /**
      * calcCircumfernce = private?? only the class need to use it
