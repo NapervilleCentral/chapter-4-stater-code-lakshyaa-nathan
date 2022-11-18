@@ -1,4 +1,5 @@
 //********************************************************************
+//********************************************************************
 //  SnakeEyes.java       Author: Lewis/Loftus/Cocking
 //
 //  Demonstrates the use of a class with overloaded constructors.
@@ -21,16 +22,19 @@ public class SnakeEyes
 
       for (int roll = 1; roll <= ROLLS; roll++)
       {
-
-         // write correct code to check for snake eyes
-
+         num1 = die1.roll();
+         num2 = die2.roll();
+         
+         if (num1 == num2 && num1 == 1)
+             snakeEyes++;
       }
 
       System.out.println ("Number of rolls: " + ROLLS);
       System.out.println ("Number of snake eyes: " + snakeEyes);
       System.out.println ("Ratio: " + (double)snakeEyes/ROLLS);
-
-      System.out.println(die3.getFaceValue() );
+      System.out.println("");
+      System.out.println(die3.getFaceValue());
+      System.out.println("die2's roll results in " + die2.roll());
       System.out.println(die2);
    }
 }
