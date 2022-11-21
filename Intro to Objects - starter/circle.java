@@ -39,9 +39,34 @@ public class circle
         calcArea();
     }
 
+    
+    /**
+     * Copy Constructor copy all of the values for 1 circle to this circle
+     * @param Circle 
+     */
+    
+    
+    
     private double calcCircumference(){
         return 2*PI*radius;
     }
+    
+    public circle(circle other){
+        this.radius = other.radius ; //
+        this.diameter = other.diameter;
+        this.circumference = other.circumference;
+        this.area = other.area;
+    }
+    
+    /**
+     * equals method 
+     * @return true if radius is the same 
+     */
+                               //or object
+    public boolean equals(circle other){
+        return this.radius == other.radius; //will tell you if the values are equivalent 
+    }
+    
     
     /**
      * calcDiameter sets the diameter to the proper number

@@ -21,27 +21,37 @@ public class ch4notes7_08
         
         double y = 5.5;
         System.out.println(solver.abs(-5)); //obj.method
+        circle kindofround = new circle(4);
+        circle round = new circle(5);
+        System.out.println(round.equals(kindofround));
         System.out.println(solver.abs(y)*10);
         System.out.println(solver.circleArea(10));
         System.out.println(solver.getArea());
         System.out.println(solver);
-        circle round = new circle(5);
+        
         System.out.println(round);
-        round.calcDiameter();
+        //round.calcDiameter();
     
+        
+        //Address myAddress = new Address ("440 W. Aurora", "Naperthrill", "IL", "60565");
+        //System.out.println(myAddress);
+        //myAddress.setAddress(myAddress);
+        //System.out.println(myAddress);
         //System.out.println(abs(-8)*abs(9));
         //System.out.println(abs(5.2)+1);
         //System.out.println(abs(x));
         //System.out.println(x+"main");
         
-    /**/
+    
     }// end of main
     
-    /*
-    /**
-        take the absoulute value of the number
-        @param int value
-        @return absoulute value of number
+    
+    
+        /**
+         * /take the absoulute value of the number
+         * @param int value
+         * @return absoulute value of number
+         */
     
    
     // public vs. private - public methods everyone can view/use
@@ -58,12 +68,13 @@ public class ch4notes7_08
         return x; //stops the function, returns back to where it began. 
     }//end of abs, x is no longer in memory by the end of the function
     
+ 
+    
     /**
-        take the absoulute value of the number
+     * take the absoulute value of the number
         @param double value
         @return absoulute value of number
-    
-    
+     */
    
     // overloading method - different type or different amount
     public static double abs(double x) 
@@ -83,8 +94,8 @@ public class ch4notes7_08
      * @return int sum 
      **/
     
-    /*                        //method signature
-    public static int add (int x, int y){
+                          //method signature
+    public static int add (int x, int y){ //passing by value x = value from main
         int sum=x+y;
         return sum;
     }
@@ -93,7 +104,15 @@ public class ch4notes7_08
         return x+y+z;
     }
 
-    */
+    
+    public static void newAddress (Address other){ //passing by reference
+        //want to change address
+        //ask the user for their address
+        other.setAddress("1635 Mistwood Dr.");
+    }
+    
+    
+    
 }// end of class
 
 

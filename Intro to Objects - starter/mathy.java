@@ -104,7 +104,7 @@ public class mathy
 
     public String toSing() //if this is not a toString, it will print the address number
     {
-        return ("Hi what do you want?, I'm just Mathy");
+        return ("Hi what  do you want?, I'm just Mathy");
 
     }
 
