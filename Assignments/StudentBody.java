@@ -22,8 +22,13 @@ public class StudentBody
                                    44132);
       Student marsha = new Student ("Marsha", "Jones", mHome, school);
 
+      
+      
+      
       System.out.println (john);
       System.out.println ();
       System.out.println (marsha);
    }
+   
+   
 }
