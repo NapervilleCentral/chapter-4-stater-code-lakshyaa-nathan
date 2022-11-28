@@ -1,5 +1,7 @@
 //********************************************************************
-//  Student.java       Author: Lewis/Loftus/Cocking
+// Lakshyaa & Adeline
+
+//Student.java       Author: Lewis/Loftus/Cocking
 //
 //  Represents a college student.
 //********************************************************************
@@ -13,7 +15,7 @@ public class Student
    //-----------------------------------------------------------------
    //  Sets up this Student object with the specified initial values.
    //-----------------------------------------------------------------
-   public Student (String first, String last, Address home,
+   public void Student (String first, String last, Address home,
                    Address school, int test1, int test2, int test3)
    {
       firstName = first;
@@ -57,7 +59,7 @@ public class Student
         test3 = score;
     
     }
-    
+     
    /**
      * Average 
      * @param int test1, int test2, int test3
@@ -71,14 +73,13 @@ public class Student
    /**
     * gettestScore
     */
-   public void SetTestScore(int testNum)
+   public int GetTestScore(int testNum)
    {
     if (testNum == 1)
         return test1;
     else if (testNum == 2)
-        return test1;
+        return test2;
     else if (testNum == 3)
-        return test1;
-    
+        return test2;
     }
 }
