@@ -16,15 +16,15 @@ public class Student
    //  Sets up this Student object with the specified initial values.
    //-----------------------------------------------------------------
    public void Student (String first, String last, Address home,
-                   Address school, int test1, int test2, int test3)
+                   Address school, int score1, int score2, int score3)
    {
       firstName = first;
       lastName = last;
       homeAddress = home;
       schoolAddress = school;
-      test1 = 0;
-      test2 = 0;
-      test3 = 0;
+      test1 = score1;
+      test2 = score2;
+      test3 = score3;
    }
 
    //-----------------------------------------------------------------
@@ -57,7 +57,7 @@ public class Student
         test2 = score;
     else if (testNum == 3)
         test3 = score;
-    
+    Average(test1, test2, test3);
     }
      
    /**
@@ -71,7 +71,7 @@ public class Student
     }
     
    /**
-    * gettestScore
+    * gettestScore 
     */
    public int GetTestScore(int testNum)
    {
@@ -81,5 +81,13 @@ public class Student
         return test2;
     else if (testNum == 3)
         return test2;
+    else
+        return -9999;
+    }
+   public String toString(AddressHome)
+   {
+    String result;
+    result= firstName + lastName;
+    
     }
 }
