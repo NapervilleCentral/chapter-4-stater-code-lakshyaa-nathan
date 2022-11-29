@@ -1,8 +1,8 @@
 /**
 *   Name
-*	Date
-	Class name
-	Description
+*    Date
+    Class name
+    Description
 ******************************************************************* */
 
 public class Rational
@@ -12,7 +12,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Sets up the rational number by ensuring a nonzero denominator
    *  and making only the numerator signed.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational (int numer, int denom)
    {
       if (denom == 0)
@@ -33,7 +34,8 @@ public class Rational
 
    /**----------------------------------------------------------------
    *  Returns the numerator of this rational number.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public int getNumerator ()
    {
       return numerator;
@@ -41,7 +43,8 @@ public class Rational
 
    /**----------------------------------------------------------------
    *  Returns the denominator of this rational number.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public int getDenominator ()
    {
       return denominator;
@@ -49,7 +52,8 @@ public class Rational
 
    /**----------------------------------------------------------------
    *  Returns the reciprocal of this rational number.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational reciprocal ()
    {
       return new Rational (denominator, numerator);
@@ -59,16 +63,31 @@ public class Rational
    *  Adds this rational number to the one passed as a parameter.
    *  A common denominator is found by multiplying the individual
    *  denominators.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational add (Rational op2)
    {
-
+        int commonDen = this.denominator * op2.denominator; //finding common denominator
+        
+        int numerator1 = this.numerator * op2.denominator; //cross multiplying
+        
+        int numerator2 = this.denominator * op2.numerator; // cross multiplying
+        
+        //you can access the denominator variable because it is in the rational class, so you can access private data
+        //don't need .this bc there is no local variable
+        
+        
+        int sum = numerator1 + numerator2; //summing up numerators
+        
+        return new Rational(sum, commonDen);  // returning summed fraction
+        
    }
 
    /**----------------------------------------------------------------
    *  Subtracts the rational number passed as a parameter from this
    *  rational number.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational subtract (Rational op2)
    {
 
@@ -77,7 +96,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Multiplies this rational number by the one passed as a
    *  parameter.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational multiply (Rational op2)
    {
 
@@ -86,7 +106,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Divides this rational number by the one passed as a parameter
    *  by multiplying by the reciprocal of the second rational.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public Rational divide (Rational op2)
    {
    }
@@ -94,7 +115,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Determines if this rational number is equal to the one passed
    *  as a parameter.  Assumes they are both reduced.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public boolean equals (Rational op2)
    {
 
@@ -102,7 +124,8 @@ public class Rational
 
    /**----------------------------------------------------------------
    *  Returns this rational number as a string.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    public String toString ()
    {
       String result = "";
@@ -114,7 +137,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Reduces this rational number by dividing both the numerator
    *  and the denominator by their greatest common divisor.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    private void reduce ()
    {
       if (numerator != 0)
@@ -129,7 +153,8 @@ public class Rational
    /**----------------------------------------------------------------
    *  Computes and returns the greatest common divisor of the two
    *  positive parameters. Uses Euclid's algorithm.
-   */----------------------------------------------------------------
+   * ----------------------------------------------------------------
+   **/
    private int gcd (int num1, int num2)
    {
       while (num1 != num2)
