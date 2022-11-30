@@ -90,7 +90,15 @@ public class Rational
    **/
    public Rational subtract (Rational op2)
    {
-
+        int commonDen = this.denominator * op2.denominator;
+        
+        int numerator1 = this.numerator * op2.denominator;
+        
+        int numerator2 = this.denominator * op2.numerator;
+        
+        int diff = numerator1 - numerator2;
+        
+        return new Rational(diff, commonDen);
    }
 
    /**----------------------------------------------------------------
@@ -100,7 +108,13 @@ public class Rational
    **/
    public Rational multiply (Rational op2)
    {
-
+        int multnum = this.numerator * op2.numerator;
+        
+        int multden = this.denominator * op2.denominator;
+        
+        // multiplying numerator and denominator
+        
+        return new Rational (multnum, multden);
    }
 
    /**----------------------------------------------------------------
@@ -110,6 +124,15 @@ public class Rational
    **/
    public Rational divide (Rational op2)
    {
+       int newnum2 = op2.denominator;
+       int newden2 = op2.numerator; //finding the reciprocal to multiply in the next step
+       
+       int multnum = this.numerator * newnum2;
+       
+       int multden = this.denominator * newden2;
+       
+       return new Rational(multnum, multden);
+       
    }
 
    /**----------------------------------------------------------------
@@ -119,7 +142,10 @@ public class Rational
    **/
    public boolean equals (Rational op2)
    {
-
+        if(this.denominator==op2.denominator && this.numerator==op2.numerator)
+            return true;
+        else
+            return false;
    }
 
    /**----------------------------------------------------------------
@@ -128,7 +154,7 @@ public class Rational
    **/
    public String toString ()
    {
-      String result = "";
+      String result = this.numerator+"/"+this.denominator;
 
 
       return result;

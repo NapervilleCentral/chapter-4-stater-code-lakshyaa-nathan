@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Account
+comment1.params=owner\ account\ initial
+comment1.target=Account(java.lang.String,\ int,\ double)
+comment1.text=\r\n\ Sets\ up\ the\ account\ by\ defining\ its\ owner,\ account\ number,\r\n\ \ and\ initial\ balance.\r\n
+comment2.params=amount
+comment2.target=double\ deposit(double)
+comment2.text=\r\n\ \ Validates\ the\ transaction,\ then\ deposits\ the\ specified\ amount\r\n\ \ into\ the\ account.\ Returns\ the\ new\ balance.\r\n
+comment3.params=amount\ fee
+comment3.target=double\ withdraw(double,\ double)
+comment3.text=\r\n\ \ Validates\ the\ transaction,\ then\ withdraws\ the\ specified\ amount\r\n\ \ from\ the\ account.\ Returns\ the\ new\ balance.\r\n
+comment4.params=
+comment4.target=void\ transfer()
+comment4.text=\r\n\ \ Asks\ the\ user\ for\ amount\ to\ transfer\r\n\ \ from\ one\ account\ to\ another.\r\n
+comment5.params=
+comment5.target=double\ addInterest()
+comment5.text=\r\n\ \ Adds\ interest\ to\ the\ account\ and\ returns\ the\ new\ balance.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ \ Returns\ a\ one-line\ description\ of\ the\ account\ as\ a\ string.\r\n
+numComments=7
