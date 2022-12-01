@@ -6,7 +6,7 @@
 //********************************************************************
 
 import java.text.NumberFormat;
-
+import java.util.Scanner;
 
 public class Account
 {
@@ -80,11 +80,16 @@ public class Account
    *  Asks the user for amount to transfer
    *  from one account to another.
    */
-   public void transfer (/*object*/)
+   public void transfer (double trans, double newbal1, double newbal2, Account acct2)
    {
-	   System.out.print("Enter amount to transfer");
-		double trans = 0; //aScannerObject.nextDouble();
-
+       Scanner scan  = new Scanner(System.in);
+       System.out.print("Enter amount to transfer");
+       trans = scan.nextDouble();
+        newbal1 = this.balance-trans;
+        newbal2 = acct2.returnbal()+trans;
+        
+        
+       
    }
 
    /**
@@ -100,17 +105,25 @@ public class Account
    *  Returns the current balance of the account.
    */
 
-
+    public double returnbal(){
+        return balance;
+    }
+  
+  
    /**
    *  Returns the account number.
    */
 
+    public double returnacct(){
+        return acctNumber;
+    }
+  
 
    /**
    *  Returns a one-line description of the account as a string.
    */
    public String toString ()
    {
-      return ("supply correct data");
+      return ("The balance of "+name+"'s account"+acctNumber+" is $" + balance);
    }
 }
