@@ -80,16 +80,10 @@ public class Account
    *  Asks the user for amount to transfer
    *  from one account to another.
    */
-   public void transfer (double trans, double newbal1, double newbal2, Account acct2)
+   public void transfer (double trans, double balance, Account acct2)
    {
-       Scanner scan  = new Scanner(System.in);
-       System.out.print("Enter amount to transfer");
-       trans = scan.nextDouble();
-        newbal1 = this.balance-trans;
-        newbal2 = acct2.returnbal()+trans;
-        
-        
-       
+       balance = this.balance-trans;
+       double newbal2 = acct2.returnbal()+trans;
    }
 
    /**

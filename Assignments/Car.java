@@ -16,8 +16,12 @@ public class Car
      * Constructor for objects of class Car
      * @param int year, String model, int miles, double fuelTankLevel
      */
-    public Car()
+    public Car(int year, int miles, String model, double fuelTankLevel)
     {
+        this.year = year;
+        this.miles = miles;
+        this.model = model;
+        this.fuelTankLevel = fuelTankLevel;
         // initialise instance variables
         
     }
@@ -32,5 +36,13 @@ public class Car
     {
         // put your code here
         return 0;
+    }
+    
+    public int getYear(){
+        return year;
+    }
+    
+    public int getMiles(){
+        return miles;
     }
 }
