@@ -38,7 +38,7 @@ public class Banking
       double trans = scan.nextDouble();
       
       
-      acct1.transfer(trans, 102.56, acct2);
+      acct1.transfer(trans, acct2);
       
       acct1.addInterest();
       acct2.addInterest();
@@ -56,6 +56,8 @@ public class Banking
   
       Account acct4 = new Account ("Lakshyaa Nathan", 83561, 200);
       
+      
+      System.out.println();
       System.out.println(acct4);
       
     }

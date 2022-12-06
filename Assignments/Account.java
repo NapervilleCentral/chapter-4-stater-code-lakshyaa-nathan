@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Account
 {
-   private NumberFormat fmt = NumberFormat.getCurrencyInstance();
+   NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
    private final double RATE = 0.035;  // interest rate of 3.5%
 
@@ -18,6 +18,14 @@ public class Account
    private double balance;
    private String name;
 
+   
+   Account acct1 = new Account ("Ted Murphy", 72354, 102.56);
+   Account acct2 = new Account ("Anita Gomez", 69713, 40.00);
+   Account acct3 = new Account ("Sanchit Reddy", 93757, 759.32);
+   
+   
+   
+   
    /**
    * Sets up the account by defining its owner, account number,
    *  and initial balance.
@@ -80,8 +88,10 @@ public class Account
    *  Asks the user for amount to transfer
    *  from one account to another.
    */
-   public void transfer (double trans, double balance, Account acct2)
+   public void transfer (double trans, Account other)
    {
+       balance = acct1.returnbal();
+       
        balance = this.balance-trans;
        double newbal2 = acct2.returnbal()+trans;
    }
