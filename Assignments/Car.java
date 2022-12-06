@@ -122,7 +122,6 @@ public class Car
             }
         }
     }
-
     /**
      * Method to drive
      * @returns how many miles the car drove unless it does not have enough fuel to drive those miles
@@ -151,4 +150,6 @@ public class Car
         {    
             return "The " + getYear() + " " + getModel () + "'s fuel tank is empty!" ;
         }
+    
     }
+}

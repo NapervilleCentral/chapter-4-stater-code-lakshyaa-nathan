@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Account
 {
    NumberFormat fmt = NumberFormat.getCurrencyInstance();
-
+   
    private final double RATE = 0.035;  // interest rate of 3.5%
 
    private int acctNumber;
