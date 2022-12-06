@@ -54,20 +54,10 @@ public class Banking
       
       
   
-      System.out.println("Would you like to open a new account? (Y/N)");
-      String response = scan.nextLine();
+      Account acct4 = new Account ("Lakshyaa Nathan", 83561, 200);
       
-      if (response =="Y" || response=="y"){
-          System.out.println("What is the name under the account? ");
-          String name = scan.nextLine();
-          System.out.println("What is your account number? ");
-          int num = scan.nextInt();
-          Account acct4 = new Account(name, num, 0);
-        }
-      else
-          System.out.println("No new account will be made");
-      }
+      System.out.println(acct4);
       
-      
-   }
+    }
+}
 
