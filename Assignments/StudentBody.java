@@ -23,7 +23,7 @@ public class StudentBody
       Student marsha = new Student ("Marsha", "Jones", mHome, school);
 
       
-      Student newStudent = new Student ("
+      Student newStudent = new Student ("Lakshyaa", "
       
       System.out.println (john);
       System.out.println ();

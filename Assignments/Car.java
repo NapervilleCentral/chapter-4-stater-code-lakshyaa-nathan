@@ -128,6 +128,7 @@ public class Car
      */
     public String drive(int miles)
     {
+        
         double subtractMilesPercent = milesToFuelLevel(miles);
         int milesToDrive = miles;
         if (!isFuelTankEmpty() && (getFuelTankLevel() - subtractMilesPercent) >= 0)
@@ -150,6 +151,37 @@ public class Car
         {    
             return "The " + getYear() + " " + getModel () + "'s fuel tank is empty!" ;
         }
+    }
+        
+        public String drive(){
+            
+        Random gen = new Random ();
+        int miles = gen.nextInt(100)+1;
+        
+        double subtractMilesPercent = milesToFuelLevel(miles);
+        int milesToDrive = miles;
+        if (!isFuelTankEmpty() && (getFuelTankLevel() - subtractMilesPercent) >= 0)
+        //If the tank is not empty and that if the car were to drive the generated miles
+        {
+            modifyFuelTankLevel(milesToDrive);
+            miles += milesToDrive;
+            return "The " + df.format(getYear()) + " " + 
+            df.format(getModel ()) + " drove " + df.format(miles) + " miles for a milelage of " + df.format(getMiles()) 
+            + " and a fuel tank level of "+ df.format(getFuelTankLevel()) ; 
+
+
+        }
+        else if ((getFuelLevelInMiles() - milesToDrive) <= 0)
+        //if there are not enough miles 
+        {
+            return "The " + getYear() + " " + getModel () + "'s fuel tank does not have enough to drive " + milesToDrive;
+        }
+        else
+        //fuel tank is empty
+        {    
+            return "The " + getYear() + " " + getModel () + "'s fuel tank is empty!" ;
+        }
     
+        
     }
 }

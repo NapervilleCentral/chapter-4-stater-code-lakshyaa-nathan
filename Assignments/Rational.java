@@ -124,12 +124,13 @@ public class Rational
    **/
    public Rational divide (Rational op2)
    {
-       int newnum2 = op2.denominator;
-       int newden2 = op2.numerator; //finding the reciprocal to multiply in the next step
        
-       int multnum = this.numerator * newnum2;
        
-       int multden = this.denominator * newden2;
+       op2.reciprocal();//finding the reciprocal to multiply in the next step
+       
+       int multnum = this.numerator * op2.getNumerator();
+       
+       int multden = this.denominator * op2.getDenominator();
        
        return new Rational(multnum, multden);
        

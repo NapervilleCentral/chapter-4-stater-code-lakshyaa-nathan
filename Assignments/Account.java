@@ -18,10 +18,7 @@ public class Account
    private double balance;
    private String name;
 
-   
-   Account acct1 = new Account ("Ted Murphy", 72354, 102.56);
-   Account acct2 = new Account ("Anita Gomez", 69713, 40.00);
-   Account acct3 = new Account ("Sanchit Reddy", 93757, 759.32);
+
    
    
    
@@ -90,10 +87,8 @@ public class Account
    */
    public void transfer (double trans, Account other)
    {
-       balance = acct1.returnbal();
-       
-       balance = this.balance-trans;
-       double newbal2 = acct2.returnbal()+trans;
+       this.withdraw(trans,0);
+       other.deposit(trans);
    }
 
    /**

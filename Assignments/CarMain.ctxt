@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=CarMain
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=mine
+comment2.target=void\ getterTest(Car)
+comment2.text=\r\n\ Prints\ out\ the\ information\ for\ each\ getter\ method\r\n
+comment3.params=mine\ miles
+comment3.target=void\ addMilesTest(Car,\ int)
+comment3.text=\r\n\ Takes\ a\ car\ and\ adds\ given\ miles\r\n\ @param\ Car\ mine,\ int\ miles\r\n
+comment4.params=mine
+comment4.target=void\ isFuelTankEmptyTests(Car)
+comment4.text=\r\n\ Takes\ a\ car\ and\ adds\ given\ miles\r\n\ @param\ Car\ object\r\n
+comment5.params=mine\ miles
+comment5.target=void\ milesToFuelLevelTest(Car,\ int)
+comment5.text=\r\n\ Takes\ a\ car\ and\ converts\ the\ given\ miles\ to\ a\ percentage\r\n\ @param\ Car\ mine,\ int\ miles\r\n
+comment6.params=mine\ subtractMiles
+comment6.target=void\ modifyFuelTankLevelTest(Car,\ int)
+comment6.text=\r\n\ Takes\ a\ car\ and\ tests\ the\ method\ the\ given\ miles\ to\ a\ percentage\r\n\ @param\ Car\ mine,\ int\ miles\r\n
+comment7.params=car1\ car2
+comment7.target=void\ driveTest(Car,\ Car)
+comment7.text=\r\n\ Races\ two\ cars.\ Uses\ two\ different\ methods\ of\ random\ amount\ of\ miles\ generated.\ One\ is\ in\ the\ parameters\ and\ one\ is\ done\ inside\ the\ method\ when\ overloaded.\r\n\ @param\ Car\ car1,\ Car\ car2\r\n
+numComments=8
