@@ -126,7 +126,7 @@ public class Rational
    {
        
        
-       op2.reciprocal();//finding the reciprocal to multiply in the next step
+       op2 = op2.reciprocal();//finding the reciprocal to multiply in the next step
        
        int multnum = this.numerator * op2.getNumerator();
        

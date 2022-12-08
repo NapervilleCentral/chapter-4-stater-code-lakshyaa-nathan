@@ -123,6 +123,6 @@ public class Account
    */
    public String toString ()
    {
-      return ("The balance of "+name+"'s account "+acctNumber+" is $" + balance);
+      return ("The balance of "+name+"'s account "+acctNumber+" is " + fmt.format(balance));
    }
 }

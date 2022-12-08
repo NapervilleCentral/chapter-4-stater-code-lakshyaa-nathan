@@ -165,8 +165,8 @@ public class Car
         {
             modifyFuelTankLevel(milesToDrive);
             miles += milesToDrive;
-            return "The " + df.format(getYear()) + " " + 
-            df.format(getModel ()) + " drove " + df.format(miles) + " miles for a milelage of " + df.format(getMiles()) 
+            return "The " + getYear() + " " + 
+            getModel () + " drove " + miles + " miles for a milelage of " + df.format(getMiles()) 
             + " and a fuel tank level of "+ df.format(getFuelTankLevel()) ; 
 
 
@@ -174,14 +174,23 @@ public class Car
         else if ((getFuelLevelInMiles() - milesToDrive) <= 0)
         //if there are not enough miles 
         {
-            return "The " + getYear() + " " + getModel () + "'s fuel tank does not have enough to drive " + milesToDrive;
+            return "The " + getYear() + " " + getModel () + "'s fuel tank does not have enough to drive. " + "We still have to drive "+milesToDrive+" miles";
         }
         else
         //fuel tank is empty
         {    
             return "The " + getYear() + " " + getModel () + "'s fuel tank is empty!" ;
         }
+    }
+    
+    public String toString(){
+            String result = year+" "+model+" "+miles+" "+fuelTankLevel;
+            
+            return result;
+        }
+    
+    }
+    
     
         
-    }
-}
+    

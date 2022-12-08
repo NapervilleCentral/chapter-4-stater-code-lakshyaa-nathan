@@ -19,9 +19,9 @@ public class RationalNumbers
 
         //are the rational numbers equal?
       if (r1.equals(r2))
-         System.out.println ("r1 and r2 are equal.");
+         System.out.println (r1+" and "+r2+" are equal.");
       else
-         System.out.println ("r1 and r2 are NOT equal.");
+         System.out.println (r1+" and "+r2+" are not equal.");
 
       r3 = r1.reciprocal();
       System.out.println ("The reciprocal of r1 is: " + r3);

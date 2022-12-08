@@ -34,7 +34,7 @@ public class Banking
       acct3.withdraw (800.00, 0.0);  // exceeds balance
 
       Scanner scan  = new Scanner(System.in);
-      System.out.print("Enter amount to transfer");
+      System.out.print("Enter amount to transfer from Ted Murphy to Anita Gomez");
       double trans = scan.nextDouble();
       
       
@@ -44,7 +44,7 @@ public class Banking
       acct2.addInterest();
       acct3.addInterest();
 
-      
+    
       
       
       System.out.println ();
